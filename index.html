@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Spotify</h1>
+    <ul>
+      <li class="active">Home</li>
+      <li>Search</li>
+      <li>Your Library</li>
+    </ul>
+    <div class="playlist">
+      <h3>Playlists</h3>
+      <ul>
+        <li>My Playlist #1</li>
+        <li>Chill Hits</li>
+        <li>Top 50 Global</li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-content">
+    <header>
+      <h2>Good Morning</h2>
+    </header>
+    <section class="songs-list">
+      <div class="song" data-src="sample.mp3">
+        <img src="https://i.scdn.co/image/ab67616d0000b2734c4e1b2a7b6b1f9abb2b8889" alt="cover">
+        <div>
+          <h4>Sample Song</h4>
+          <p>Artist Name</p>
+        </div>
+        <button class="play-btn">Play</button>
+      </div>
+      <div class="song" data-src="sample2.mp3">
+        <img src="https://i.scdn.co/image/ab67616d0000b273b4a5f8b1ac4c1f7b8c1c8b76" alt="cover">
+        <div>
+          <h4>Another Song</h4>
+          <p>Another Artist</p>
+        </div>
+        <button class="play-btn">Play</button>
+      </div>
+    </section>
+  </div>
+  <div class="player">
+    <div class="current-song">
+      <img id="player-cover" src="" alt="cover">
+      <div>
+        <span id="player-title"></span>
+        <span id="player-artist"></span>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prev">Prev</button>
+      <button id="play">Play</button>
+      <button id="next">Next</button>
+    </div>
+    <audio id="audio" src="song.mp3"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
